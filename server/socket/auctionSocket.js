@@ -187,14 +187,14 @@ function initAuctionSocket(io) {
         const minBid = state.currentBidder ? state.currentBid + minIncrement : state.currentBid;
 
         if (amount < minBid) {
-          return socket.emit('bid-error', { message: \`Bid must be at least ₹\${minBid.toFixed(2)} Cr\` });
+          return socket.emit('bid-error', { message: `Bid must be at least ₹${minBid.toFixed(2)} Cr` });
         }
 
         const team = await Team.findOne({ _id: teamId, poolId: poolId });
         if (!team) return socket.emit('bid-error', { message: 'Team not found in this pool' });
 
-        if (amount > team.budget) return socket.emit('bid-error', { message: \`Insufficient budget\` });
-        if (team.players && team.players.length >= team.maxPlayers) return socket.emit('bid-error', { message: \`Squad full\` });
+        if (amount > team.budget) return socket.emit('bid-error', { message: `Insufficient budget` });
+        if (team.players && team.players.length >= team.maxPlayers) return socket.emit('bid-error', { message: `Squad full` });
 
         state.currentBid = amount;
         state.currentBidder = teamId;
@@ -274,7 +274,7 @@ function initAuctionSocket(io) {
     });
 
     socket.on('disconnect', () => {
-      console.log(\`Client disconnected: \${socket.id}\`);
+      console.log(`Client disconnected: ${socket.id}`);
     });
   });
 
