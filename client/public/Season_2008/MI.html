@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>IPL 2008 | Mumbai Indians Squad</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#0a0a0a; color:#f0f0f0; min-height:100vh; }
+  header {
+    background: linear-gradient(135deg, #004BA0 0%, #C9A84C33 100%);
+    border-bottom: 3px solid #C9A84C;
+    padding: 24px 32px; display:flex; align-items:center; gap:20px;
+    position:sticky; top:0; z-index:10; backdrop-filter:blur(8px);
+  }
+  header img { width:80px; height:80px; object-fit:contain; filter:drop-shadow(0 0 8px #C9A84C88); }
+  .header-text h1 { font-size:2rem; font-weight:800; color:#C9A84C; text-shadow:0 0 20px #C9A84C55; }
+  .header-text h2 { font-size:1.1rem; color:#ccc; margin-top:4px; }
+  .breadcrumb { padding:12px 32px; font-size:0.85rem; color:#888; background:#111; border-bottom:1px solid #222; }
+  .breadcrumb a { color:#C9A84C; text-decoration:none; }
+  .section-title {
+    font-size:1.1rem; font-weight:700; color:#C9A84C;
+    padding:20px 32px 10px; text-transform:uppercase; letter-spacing:2px;
+    border-left:4px solid #C9A84C; margin-left:24px;
+  }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:16px; padding:0 24px 24px; }
+  .player-card {
+    background:#1a1a1a; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;
+    transition:transform .2s,box-shadow .2s; cursor:default;
+    border-top:3px solid #C9A84C33;
+  }
+  .player-card:hover {
+    transform:translateY(-4px);
+    box-shadow:0 8px 24px #C9A84C33;
+    border-top-color:#C9A84C;
+  }
+  .player-img-wrap {
+    width:100%; aspect-ratio:1; background: linear-gradient(180deg, #004BA044 0%, #111 100%);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .player-img-wrap img { width:100%; height:100%; object-fit:cover; object-position:top center; }
+  .player-info { padding:12px 10px; text-align:center; }
+  .player-name { font-weight:700; font-size:0.92rem; color:#fff; line-height:1.3; margin-bottom:4px; }
+  .player-role { font-size:0.78rem; color:#C9A84C; margin-bottom:2px; }
+  .player-country { font-size:1rem; }
+  footer {
+    text-align:center; padding:20px; color:#555; font-size:0.8rem;
+    border-top:1px solid #222; margin-top:20px;
+  }
+  footer a { color:#C9A84C; text-decoration:none; }
+  .stats-bar {
+    display:flex; gap:12px; flex-wrap:wrap; padding:16px 32px;
+    background:#111; border-bottom:1px solid #222; font-size:0.85rem; color:#aaa;
+  }
+  .stat-chip {
+    background:#1a1a1a; border:1px solid #333; border-radius:20px;
+    padding:4px 14px; color:#C9A84C; font-weight:600;
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://documents.iplt20.com/ipl/MI/Logos/Logooutline/MIoutline.png" alt="MI logo" onerror="this.style.display='none'"/>
+  <div class="header-text">
+    <h1>Mumbai Indians</h1>
+    <h2>IPL 2008 Squad — 10 Players</h2>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a> &rsaquo;
+  <a href="index.html">Season 2008</a> &rsaquo;
+  Mumbai Indians
+</div>
+<div class="stats-bar">
+  <span>Season: <span class="stat-chip">2008</span></span>
+  <span>Players: <span class="stat-chip">10</span></span>
+  <span>Batters: <span class="stat-chip">4</span></span>
+  <span>All-Rounders: <span class="stat-chip">3</span></span>
+  <span>Bowlers: <span class="stat-chip">3</span></span>
+</div>
+<div class="section-title">Full Squad</div>
+<div class="grid">
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/29.png" alt="Sachin Tendulkar"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/29.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Sachin Tendulkar</div>
+            <div class="player-role">🏏 Batter (C)</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/59.png" alt="Sanath Jayasuriya"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/59.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Sanath Jayasuriya</div>
+            <div class="player-role">🏏 Batter</div>
+            <div class="player-country">🇱🇰</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/4.png" alt="Kieron Pollard"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/4.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Kieron Pollard</div>
+            <div class="player-role">⭐ All-Rounder</div>
+            <div class="player-country">🇹🇹</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/107.png" alt="Rohit Sharma"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/107.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Rohit Sharma</div>
+            <div class="player-role">🏏 Batter</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/26.png" alt="Zaheer Khan"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/26.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Zaheer Khan</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/13.png" alt="Lasith Malinga"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/13.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Lasith Malinga</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇱🇰</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/22.png" alt="Harbhajan Singh"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/22.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Harbhajan Singh</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/17.png" alt="JP Duminy"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/17.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">JP Duminy</div>
+            <div class="player-role">⭐ All-Rounder</div>
+            <div class="player-country">🇿🇦</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/7.png" alt="Dwayne Bravo"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/7.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Dwayne Bravo</div>
+            <div class="player-role">⭐ All-Rounder</div>
+            <div class="player-country">🇹🇹</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2008/2980.png" alt="Robin Uthappa"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/2980.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Robin Uthappa</div>
+            <div class="player-role">🏏 WK-Batter</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+</div>
+<footer>
+  Data sourced from <a href="https://www.iplt20.com/teams/mumbai-indians">iplt20.com</a> &bull;
+  IPL 2008 &bull; Mumbai Indians
+</footer>
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>IPL 2013 | Royal Challengers Bengaluru Squad</title>
+<style>
+  * { box-sizing: border-box; margin:0; padding:0; }
+  body { font-family: 'Segoe UI', Arial, sans-serif; background:#0a0a0a; color:#f0f0f0; min-height:100vh; }
+  header {
+    background: linear-gradient(135deg, #1A0000 0%, #EC1C2433 100%);
+    border-bottom: 3px solid #EC1C24;
+    padding: 24px 32px; display:flex; align-items:center; gap:20px;
+    position:sticky; top:0; z-index:10; backdrop-filter:blur(8px);
+  }
+  header img { width:80px; height:80px; object-fit:contain; filter:drop-shadow(0 0 8px #EC1C2488); }
+  .header-text h1 { font-size:2rem; font-weight:800; color:#EC1C24; text-shadow:0 0 20px #EC1C2455; }
+  .header-text h2 { font-size:1.1rem; color:#ccc; margin-top:4px; }
+  .breadcrumb { padding:12px 32px; font-size:0.85rem; color:#888; background:#111; border-bottom:1px solid #222; }
+  .breadcrumb a { color:#EC1C24; text-decoration:none; }
+  .section-title {
+    font-size:1.1rem; font-weight:700; color:#EC1C24;
+    padding:20px 32px 10px; text-transform:uppercase; letter-spacing:2px;
+    border-left:4px solid #EC1C24; margin-left:24px;
+  }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:16px; padding:0 24px 24px; }
+  .player-card {
+    background:#1a1a1a; border:1px solid #2a2a2a; border-radius:12px; overflow:hidden;
+    transition:transform .2s,box-shadow .2s; cursor:default;
+    border-top:3px solid #EC1C2433;
+  }
+  .player-card:hover {
+    transform:translateY(-4px);
+    box-shadow:0 8px 24px #EC1C2433;
+    border-top-color:#EC1C24;
+  }
+  .player-img-wrap {
+    width:100%; aspect-ratio:1; background: linear-gradient(180deg, #1A000044 0%, #111 100%);
+    display:flex; align-items:center; justify-content:center; overflow:hidden;
+  }
+  .player-img-wrap img { width:100%; height:100%; object-fit:cover; object-position:top center; }
+  .player-info { padding:12px 10px; text-align:center; }
+  .player-name { font-weight:700; font-size:0.92rem; color:#fff; line-height:1.3; margin-bottom:4px; }
+  .player-role { font-size:0.78rem; color:#EC1C24; margin-bottom:2px; }
+  .player-country { font-size:1rem; }
+  footer {
+    text-align:center; padding:20px; color:#555; font-size:0.8rem;
+    border-top:1px solid #222; margin-top:20px;
+  }
+  footer a { color:#EC1C24; text-decoration:none; }
+  .stats-bar {
+    display:flex; gap:12px; flex-wrap:wrap; padding:16px 32px;
+    background:#111; border-bottom:1px solid #222; font-size:0.85rem; color:#aaa;
+  }
+  .stat-chip {
+    background:#1a1a1a; border:1px solid #333; border-radius:20px;
+    padding:4px 14px; color:#EC1C24; font-weight:600;
+  }
+</style>
+</head>
+<body>
+<header>
+  <img src="https://documents.iplt20.com/ipl/RCB/Logos/Logooutline/RCBoutline.png" alt="RCB logo" onerror="this.style.display='none'"/>
+  <div class="header-text">
+    <h1>Royal Challengers Bengaluru</h1>
+    <h2>IPL 2013 Squad — 10 Players</h2>
+  </div>
+</header>
+<div class="breadcrumb">
+  <a href="../index.html">🏠 Home</a> &rsaquo;
+  <a href="index.html">Season 2013</a> &rsaquo;
+  Royal Challengers Bengaluru
+</div>
+<div class="stats-bar">
+  <span>Season: <span class="stat-chip">2013</span></span>
+  <span>Players: <span class="stat-chip">10</span></span>
+  <span>Batters: <span class="stat-chip">5</span></span>
+  <span>All-Rounders: <span class="stat-chip">0</span></span>
+  <span>Bowlers: <span class="stat-chip">5</span></span>
+</div>
+<div class="section-title">Full Squad</div>
+<div class="grid">
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/164.png" alt="Virat Kohli"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/164.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Virat Kohli</div>
+            <div class="player-role">🏏 Batter (C)</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/1557.png" alt="AB de Villiers"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/1557.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">AB de Villiers</div>
+            <div class="player-role">🏏 WK-Batter</div>
+            <div class="player-country">🇿🇦</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/10.png" alt="Chris Gayle"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/10.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Chris Gayle</div>
+            <div class="player-role">🏏 Batter</div>
+            <div class="player-country">🇯🇲</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/2989.png" alt="Cheteshwar Pujara"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/2989.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Cheteshwar Pujara</div>
+            <div class="player-role">🏏 Batter</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/35.png" alt="Tillakaratne Dilshan"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/35.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Tillakaratne Dilshan</div>
+            <div class="player-role">🏏 Batter</div>
+            <div class="player-country">🇱🇰</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/36.png" alt="Muttiah Muralitharan"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/36.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Muttiah Muralitharan</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇱🇰</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/2990.png" alt="R Vinay Kumar"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/2990.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">R Vinay Kumar</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/26.png" alt="Zaheer Khan"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/26.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Zaheer Khan</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇮🇳</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/1510.png" alt="Mitchell Starc"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/1510.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Mitchell Starc</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇦🇺</div>
+          </div>
+        </div>
+        <div class="player-card">
+          <div class="player-img-wrap">
+            <img src="https://documents.iplt20.com/ipl/IPLHeadshot2013/37.png" alt="Ravi Rampaul"
+                 onerror="this.onerror=null;this.src='https://documents.iplt20.com/ipl/IPLHeadshot2026/37.png'"
+                 loading="lazy"/>
+          </div>
+          <div class="player-info">
+            <div class="player-name">Ravi Rampaul</div>
+            <div class="player-role">🎯 Bowler</div>
+            <div class="player-country">🇹🇹</div>
+          </div>
+        </div>
+</div>
+<footer>
+  Data sourced from <a href="https://www.iplt20.com/teams/royal-challengers-bengaluru">iplt20.com</a> &bull;
+  IPL 2013 &bull; Royal Challengers Bengaluru
+</footer>
+</body>
+</html>

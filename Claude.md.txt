@@ -1,0 +1,145 @@
+📄 Product Requirements Document (PRD)
+IPL Auction Platform (Realistic Simulation)
+1. 🧭 Overview
+
+The goal is to build a real-time, highly interactive auction system inspired by the Indian Premier League player auction.
+
+This is not just a basic bidding app. It should feel like a live IPL auction room, including pressure, strategy, competition, and time constraints.
+
+The platform enables users (teams) to bid on players, manage budgets, and build squads dynamically.
+
+📌 Based on your initial draft:
+This version expands it into a production-level PRD.
+
+2. 🎯 Product Vision
+
+Create the most realistic digital IPL auction experience, where users feel like franchise owners making real-time decisions.
+
+3. 🧑‍💻 Target Users
+Primary Users
+Cricket fans
+College event organizers
+Fantasy league players
+Esports-style bidders
+Secondary Users
+Admins hosting auctions
+View-only spectators
+4. 🚀 Core Features
+🔐 4.1 Authentication System
+JWT-based login/signup
+Roles:
+Admin
+Team Owner
+Viewer
+🏏 4.2 Player Management
+Player attributes:
+Name, Role (Batsman/Bowler/All-rounder)
+Base price
+Country
+Stats (optional advanced feature)
+Categories:
+Marquee players
+Capped
+Uncapped
+⚙️ 4.3 Auction Control Panel (Admin)
+Start / Pause / Resume auction
+Select next player
+Set:
+Base price
+Timer (default 30 sec)
+Force sell / unsold
+🔴 4.4 Live Auction Engine (CORE FEATURE)
+
+Real-time system using WebSockets:
+
+Live bidding updates
+Timer countdown (auto-reset on bid)
+Current highest bidder display
+Bid increments (dynamic)
+
+💡 Example flow:
+
+Player appears → Timer starts → Bids increase → Timer resets → Sold
+💰 4.5 Budget System
+Each team gets fixed budget (e.g. 200 points)
+Prevent:
+Overbidding
+Invalid bids
+📊 4.6 Team Dashboard
+Players bought
+Remaining budget
+Squad composition rules
+📜 4.7 Auction Results
+Sold players list
+Unsold players
+Bid history
+📄 4.8 PDF Report Generation
+Team-wise report
+Auction summary
+Downloadable
+🧠 4.9 Smart Features (Advanced)
+Auto-bid system (like eBay logic)
+AI suggestion (best players under budget)
+Analytics dashboard
+5. 🧩 Functional Requirements
+Feature	Requirement
+Bidding	Real-time, <200ms latency
+Timer	Auto reset on new bid
+Concurrency	Multiple users bidding simultaneously
+Data Sync	Instant UI update across all users
+Validation	Server-side strict validation
+6. 🏗️ System Architecture
+Frontend
+React.js
+Tailwind / Material UI
+Socket.io client
+Backend
+Node.js + Express
+Socket.io (real-time engine)
+JWT Authentication
+Database
+MongoDB
+Architecture Flow
+Client → WebSocket → Server → DB → Broadcast → Clients
+7. 🎨 UI/UX Design Principles
+Dark theme (like real auction rooms)
+Big live bid display
+Countdown timer highlight
+Sound effects (optional 🔥)
+8. 🔒 Non-Functional Requirements
+Scalability: 100+ concurrent users
+Security:
+JWT
+Input validation
+Performance:
+Real-time updates without lag
+Reliability:
+No duplicate bids
+Atomic transactions
+9. 🧪 Testing Strategy
+Unit Testing (APIs)
+Integration Testing (Socket events)
+Load Testing (multiple bidders)
+UAT (real users simulation)
+10. 🚀 Future Enhancements
+Voice-based bidding 🎙️
+Mobile app (React Native)
+AI auction commentator 🤖
+Multi-language support (Tamil, Hindi, etc.)
+Fantasy league integration
+11. 📅 Milestones
+Phase	Timeline
+Planning	1 week
+UI + Backend Setup	2 weeks
+Auction Engine	2 weeks
+Testing	1 week
+Deployment	1 week
+12. ⚠️ Risks & Challenges
+Real-time sync issues
+Bid conflicts
+Timer accuracy
+Server load spikes
+13. 💡 Final Insight
+
+If you build this properly, it’s not just a college project.
+It can become a real SaaS product for events, colleges, and leagues.
